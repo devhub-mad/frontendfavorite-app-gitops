@@ -1,0 +1,23 @@
+app:
+  name: frontendfavorite-app
+  namespace: devhub
+  cluster: .apps.cluster-wk7fv.wk7fv.sandbox847.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-mad/frontendfavorite-app
+  org: devhub-mad
+  name: frontendfavorite-app
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000/devhub
+  name: frontendfavorite-app
+  tag: latest
+
+
+pipelineStorage:
+  pvcSize: 3Gi
+  storageClassName: ""
+
+targetEnvironment: dev
+env: []
